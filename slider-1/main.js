@@ -5,7 +5,9 @@ const sliderContainer = document.querySelector(".slider-container");
 let intervalId;
 
 const buttons = document.querySelector(".buttons");
-document.addEventListener("DOMContentLoaded", startSlider);
+// document.addEventListener("DOMContentLoaded", startSlider);
+
+startSlider();
 
 function startSlider() {
   buttons.addEventListener("click", handleNavigation);
@@ -56,5 +58,5 @@ function prevSlide() {
 function autoSlide() {
   intervalId = setInterval(() => {
     prevSlide();
-  }, 3000);
+  }, 2000);
 }
